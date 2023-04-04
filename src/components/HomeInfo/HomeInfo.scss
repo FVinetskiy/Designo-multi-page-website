@@ -1,0 +1,30 @@
+.home-info {
+  text-align: center;
+  padding-top: 46px;
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 5px;
+    color: #333136;
+    margin: 0 0 32px 0;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #333136;
+    margin: 0;
+  }
+  &__img {
+    margin-bottom: 42px;
+    width: 202px;
+    height: 202px;
+    background-image: url(./images/bg-pattern-hero-home.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &__figure {
+    margin: 0 0 80px 0;
+  }
+}

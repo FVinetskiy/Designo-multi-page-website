@@ -1,0 +1,31 @@
+.additional {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 64px 24px 64px;
+  bottom: -190px;
+  margin-top: -150px;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #e7816b;
+  background-image: url('./images/back-add.png');
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__title {
+    color: #ffffff;
+    font-size: 32px;
+    line-height: 36px;
+    margin: 0 0 16px 0;
+    font-weight: 500;
+  }
+  &__description {
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    margin: 0 0 32px 0;
+  }
+}

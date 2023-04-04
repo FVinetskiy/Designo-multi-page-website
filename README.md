@@ -8,4 +8,6 @@
 ### `how to start a project`
 
 - [x] npm i
-- [x] npm start
+- [x] npm run dev
+- [x] npm run build
+

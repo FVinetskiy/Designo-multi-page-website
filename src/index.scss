@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
@@ -8,5 +12,24 @@ body {
   overflow: auto;
   min-height: 100vh;
   background: #fff;
+  font-family: 'Jost', sans-serif;
+  padding-top: 96px;
 }
-// font-family: 'League Spartan', sans-serif;700
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1110px;
+  padding: 0 24px;
+  margin: 0 auto;
+  &--fool {
+    width: 1440px;
+  }
+  @media screen and (min-width: 767px) {
+    padding: 0 40px;
+  }
+}
