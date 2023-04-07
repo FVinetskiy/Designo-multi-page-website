@@ -2,21 +2,20 @@ import React from 'react'
 import './Navigation.scss'
 import {Link} from 'react-router-dom'
 
-const Navigation = () => {
+const Navigation = ({dataNavigate, structure}) => {
+  const listItems = dataNavigate.map((item) => (
+    <Link
+      to={item.path}
+      className={`navigation__link navigation__link--${item.style}`}
+      key={item.id}>
+      <h2 className='navigation__title'>{item.title}</h2>
+      <p className='navigation__description'>VIEW PROJECTS</p>
+    </Link>
+  ))
+
   return (
-    <section className='navigation'>
-      <Link className='navigation__link' to='web-design'>
-        <h2 className='navigation__title'>WEB DESIGN</h2>
-        <p className='navigation__description'>VIEW PROJECTS</p>
-      </Link>
-      <Link className='navigation__link' to='web'>
-        <h2 className='navigation__title'>WEB DESIGN</h2>
-        <p className='navigation__description'>VIEW PROJECTS</p>
-      </Link>
-      <Link className='navigation__link' to='web'>
-        <h2 className='navigation__title'>WEB DESIGN</h2>
-        <p className='navigation__description'>VIEW PROJECTS</p>
-      </Link>
+    <section className={!structure ? 'navigation' : `navigation ${structure}`}>
+      {listItems}
     </section>
   )
 }

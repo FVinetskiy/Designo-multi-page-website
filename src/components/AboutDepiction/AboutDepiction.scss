@@ -1,0 +1,69 @@
+.depiction {
+  margin: 0 -24px;
+  font-size: 0;
+  &__img {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__content {
+    background: #fdf3f0;
+    text-align: center;
+    padding: 80px 30px 55px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+    color: #e7816b;
+    margin: 0 0 25px 0;
+  }
+  &__text {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #333136;
+    margin: 0 0 24px 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0 0 20px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    &__title {
+      font-size: 40px;
+      line-height: 48px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 26px;
+    }
+    &__content {
+      padding: 68px 70px 44px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    &__img {
+      width: 476px;
+      height: 640px;
+    }
+    &__content {
+      width: calc(100% - 476px);
+    }
+    &__text,
+    &__title {
+      text-align: left;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    margin: 0 0 160px 0;
+    &__content {
+      padding: 154px 95px 44px;
+    }
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+  }
+}

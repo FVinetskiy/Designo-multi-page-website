@@ -1,9 +1,11 @@
 * {
   box-sizing: border-box;
+  outline: none;
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 body {
@@ -14,22 +16,34 @@ body {
   background: #fff;
   font-family: 'Jost', sans-serif;
   padding-top: 96px;
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+  }
 }
 
 button {
   cursor: pointer;
-  outline: none;
 }
 
 .container {
   width: 100%;
-  max-width: 1110px;
+  max-width: 1190px;
   padding: 0 24px;
   margin: 0 auto;
-  &--fool {
-    width: 1440px;
-  }
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     padding: 0 40px;
   }
+}
+textarea::placeholder,
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
+  caret-color: #fff;
 }

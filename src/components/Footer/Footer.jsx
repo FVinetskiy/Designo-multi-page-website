@@ -27,43 +27,45 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className='footer__text-item'>
-          <p className='footer__title'>Designo Central Office</p>
-          <p className='footer__text'>3886 Wellington Street</p>
-          <p className='footer__text'>Toronto, Ontario M9C 3J5</p>
+        <div className='footer__bottom-content'>
+          <div className='footer__text-item'>
+            <p className='footer__title'>Designo Central Office</p>
+            <p className='footer__text'>3886 Wellington Street</p>
+            <p className='footer__text'>Toronto, Ontario M9C 3J5</p>
+          </div>
+          <div className='footer__text-item'>
+            <p className='footer__title'>Contact Us (Central Office)</p>
+            <p className='footer__text'>P : +1 253-863-8967 </p>
+            <p className='footer__text'>M : contact@designo.co</p>
+          </div>
+          <ul className='social-list'>
+            <li>
+              <a className='social-list__link'>
+                <Fb />
+              </a>
+            </li>
+            <li>
+              <a className='social-list__link'>
+                <Youtobe />
+              </a>
+            </li>
+            <li>
+              <a className='social-list__link'>
+                <Twitter />
+              </a>
+            </li>
+            <li>
+              <a className='social-list__link'>
+                <Pinterest />
+              </a>
+            </li>
+            <li>
+              <a className='social-list__link'>
+                <Instagram />
+              </a>
+            </li>
+          </ul>
         </div>
-        <div className='footer__text-item'>
-          <p className='footer__title'>Contact Us (Central Office)</p>
-          <p className='footer__text'>P : +1 253-863-8967 </p>
-          <p className='footer__text'>M : contact@designo.co</p>
-        </div>
-        <ul className='social-list'>
-          <li>
-            <a className='social-list__link'>
-              <Fb />
-            </a>
-          </li>
-          <li>
-            <a className='social-list__link'>
-              <Youtobe />
-            </a>
-          </li>
-          <li>
-            <a className='social-list__link'>
-              <Twitter />
-            </a>
-          </li>
-          <li>
-            <a className='social-list__link'>
-              <Pinterest />
-            </a>
-          </li>
-          <li>
-            <a className='social-list__link'>
-              <Instagram />
-            </a>
-          </li>
-        </ul>
       </div>
     </footer>
   )

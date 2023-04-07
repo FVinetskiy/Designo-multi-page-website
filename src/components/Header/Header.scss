@@ -1,15 +1,23 @@
 .header {
-  padding: 35px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   background: #fff;
-  height: 96px;
   z-index: 1;
+  &__content {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 768px) {
+    position: static;
+    &__content {
+      padding: 60px 0;
+      height: auto;
+    }
+  }
 }
 
 .menu-toggle {
@@ -37,6 +45,9 @@
     background: currentColor;
     transform: translate(-50%, -50%);
     transition: transform 0.25s ease-in-out;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
@@ -78,6 +89,28 @@ button.is-active {
       font-size: 24px;
       letter-spacing: 2px;
       line-height: 25px;
+      &:hover {
+        border-bottom: 1px solid;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    position: static;
+    background: transparent;
+    height: auto;
+    &__list {
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0;
+    }
+    &__item {
+      margin: 0 0 0 42px;
+      a {
+        color: #333136;
+        font-size: 14px;
+      }
     }
   }
 }

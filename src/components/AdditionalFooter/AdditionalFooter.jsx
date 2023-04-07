@@ -5,11 +5,14 @@ import './AdditionalFooter.scss'
 const AdditionalFooter = () => {
   return (
     <div className='additional'>
-      <p className='additional__title'>Let’s talk about your project</p>
-      <p className='additional__description'>
-        Ready to take it to the next level? Contact us today and find out how
-        our expertise can help your business grow.
-      </p>
+      <div className='additional__content'>
+        <p className='additional__title'>Let’s talk about your project</p>
+        <p className='additional__description'>
+          Ready to take it to the next level? Contact us today and find out how
+          our expertise can help your business grow.
+        </p>
+      </div>
+
       <Button text='Get in touch' />
     </div>
   )
