@@ -20,7 +20,7 @@
     position: relative;
     &::after {
       content: '';
-      background-image: url(./images/arrow.svg);
+      background-image: url('/images/arrow.svg');
       width: 5px;
       height: 10px;
       display: inline-block;
@@ -50,13 +50,13 @@
       transition: 0.2s linear;
     }
     &--web {
-      background-image: url('./images/navigate1.jpg');
+      background-image: url(/images/navigate1.jpg);
     }
     &--app {
-      background-image: url('./images/navigate2.jpg');
+      background-image: url(/images/navigate2.jpg);
     }
     &--graphic {
-      background-image: url('./images/navigate3.jpg');
+      background-image: url(/images/navigate3.jpg);
     }
     &:hover {
       &:before {

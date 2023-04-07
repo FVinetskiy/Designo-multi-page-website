@@ -1,15 +1,22 @@
 import React from 'react'
 import './LocationBlock.scss'
+import {MapContainer, TileLayer} from 'react-leaflet'
 
 const LocationBlock = () => {
   return (
     <div className='locations'>
       <div className='locations__item'>
-        <img
-          className='locations__img'
-          src='images/image-map-canada.png'
-          alt='canada'
-        />
+        <div className='locations__img'>
+          <MapContainer
+            center={[32.79654681731154, -110.16339452965717]}
+            zoom={3}
+            scrollWheelZoom={true}>
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+            />
+          </MapContainer>
+        </div>
         <div className='locations__wrap-text'>
           <p className='locations__title'>Canada</p>
           <div className='locations__info'>
@@ -25,11 +32,17 @@ const LocationBlock = () => {
         </div>
       </div>
       <div className='locations__item locations__item--reverse'>
-        <img
-          className='locations__img'
-          src='images/image-map-australia.png'
-          alt='australia'
-        />
+        <div className='locations__img'>
+          <MapContainer
+            center={[-61.42327697298839, 132.28264327133195]}
+            zoom={3}
+            scrollWheelZoom={true}>
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+            />
+          </MapContainer>
+        </div>
         <div className='locations__wrap-text'>
           <p className='locations__title'>Australia</p>
           <div className='locations__info'>
@@ -45,11 +58,17 @@ const LocationBlock = () => {
         </div>
       </div>
       <div className='locations__item'>
-        <img
-          className='locations__img'
-          src='images/image-map-united-kingdom.png'
-          alt='united-kingdom'
-        />
+        <div className='locations__img'>
+          <MapContainer
+            center={[48.02497955179523, -1.693461125398985]}
+            zoom={5}
+            scrollWheelZoom={true}>
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+            />
+          </MapContainer>
+        </div>
         <div className='locations__wrap-text'>
           <p className='locations__title'>United Kingdom</p>
           <div className='locations__info'>

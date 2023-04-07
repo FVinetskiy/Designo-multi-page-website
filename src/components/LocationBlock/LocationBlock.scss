@@ -9,12 +9,13 @@
     height: 320px;
     object-fit: cover;
     object-position: center;
+    overflow: hidden;
   }
   &__wrap-text {
     background: #fdf3f0;
     padding: 80px 10px 55px;
     text-align: center;
-    background-image: url(./images/back-add.png);
+    background-image: url('/images/back-add.png');
     background-position: 0 0;
     background-size: cover;
   }
