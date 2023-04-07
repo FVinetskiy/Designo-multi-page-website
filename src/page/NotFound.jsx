@@ -1,7 +1,12 @@
 import React from 'react'
+import {Notfound} from '../components/icons/notfound'
 
 const NotFound = () => {
-  return <div>NotFound</div>
+  return (
+    <div className='notfound'>
+      <Notfound />
+    </div>
+  )
 }
 
 export default NotFound
